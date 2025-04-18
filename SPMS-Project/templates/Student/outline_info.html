@@ -1,0 +1,1144 @@
+
+{%block additional%}
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    .s1 {
+        color: black;
+        font-family: "Times New Roman", serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 18pt;
+    }
+
+    .s2 {
+        color: black;
+        font-family: "Times New Roman", serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 13.5pt;
+    }
+
+    .h1 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 13pt;
+    }
+
+    .s3 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    h4 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .h2,
+    h2 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .s4 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .a,
+    a {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .p,
+    p {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+        margin: 0pt;
+    }
+
+    .s5 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    .s6 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    .s7 {
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .s8 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    h3 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    .s9 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .s10 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .s11 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    .s12 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .s13 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .s14 {
+        color: #808080;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l1>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    #l1>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l2 {
+        padding-left: 0pt;
+    }
+
+    #l2>li>*:first-child:before {
+        content: "● ";
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l3 {
+        padding-left: 0pt;
+        counter-reset: e1 1;
+    }
+
+    #l3>li>*:first-child:before {
+        counter-increment: e1;
+        content: counter(e1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l3>li:first-child>*:first-child:before {
+        counter-increment: e1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l4 {
+        padding-left: 0pt;
+        counter-reset: f1 1;
+    }
+
+    #l4>li>*:first-child:before {
+        counter-increment: f1;
+        content: counter(f1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    #l4>li:first-child>*:first-child:before {
+        counter-increment: f1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l5 {
+        padding-left: 0pt;
+    }
+
+    #l5>li>*:first-child:before {
+        content: "● ";
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l6 {
+        padding-left: 0pt;
+        counter-reset: h1 1;
+    }
+
+    #l6>li>*:first-child:before {
+        counter-increment: h1;
+        content: counter(h1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l6>li:first-child>*:first-child:before {
+        counter-increment: h1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l7 {
+        padding-left: 0pt;
+        counter-reset: i1 3;
+    }
+
+    #l7>li>*:first-child:before {
+        counter-increment: i1;
+        content: counter(i1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l7>li:first-child>*:first-child:before {
+        counter-increment: i1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l8 {
+        padding-left: 0pt;
+        counter-reset: j1 1;
+    }
+
+    #l8>li>*:first-child:before {
+        counter-increment: j1;
+        content: counter(j1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l8>li:first-child>*:first-child:before {
+        counter-increment: j1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l9 {
+        padding-left: 0pt;
+        counter-reset: k1 1;
+    }
+
+    #l9>li>*:first-child:before {
+        counter-increment: k1;
+        content: counter(k1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l9>li:first-child>*:first-child:before {
+        counter-increment: k1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l10 {
+        padding-left: 0pt;
+        counter-reset: l1 1;
+    }
+
+    #l10>li>*:first-child:before {
+        counter-increment: l1;
+        content: counter(l1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l10>li:first-child>*:first-child:before {
+        counter-increment: l1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l11 {
+        padding-left: 0pt;
+        counter-reset: m1 1;
+    }
+
+    #l11>li>*:first-child:before {
+        counter-increment: m1;
+        content: counter(m1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l11>li:first-child>*:first-child:before {
+        counter-increment: m1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l12 {
+        padding-left: 0pt;
+        counter-reset: n1 1;
+    }
+
+    #l12>li>*:first-child:before {
+        counter-increment: n1;
+        content: counter(n1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l12>li:first-child>*:first-child:before {
+        counter-increment: n1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l13 {
+        padding-left: 0pt;
+        counter-reset: o1 1;
+    }
+
+    #l13>li>*:first-child:before {
+        counter-increment: o1;
+        content: counter(o1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l13>li:first-child>*:first-child:before {
+        counter-increment: o1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l14 {
+        padding-left: 0pt;
+        counter-reset: p1 5;
+    }
+
+    #l14>li>*:first-child:before {
+        counter-increment: p1;
+        content: counter(p1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l14>li:first-child>*:first-child:before {
+        counter-increment: p1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l15 {
+        padding-left: 0pt;
+        counter-reset: q1 1;
+    }
+
+    #l15>li>*:first-child:before {
+        counter-increment: q1;
+        content: counter(q1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l15>li:first-child>*:first-child:before {
+        counter-increment: q1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l16 {
+        padding-left: 0pt;
+        counter-reset: r1 1;
+    }
+
+    #l16>li>*:first-child:before {
+        counter-increment: r1;
+        content: counter(r1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l16>li:first-child>*:first-child:before {
+        counter-increment: r1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l17 {
+        padding-left: 0pt;
+        counter-reset: s1 1;
+    }
+
+    #l17>li>*:first-child:before {
+        counter-increment: s1;
+        content: counter(s1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l17>li:first-child>*:first-child:before {
+        counter-increment: s1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l18 {
+        padding-left: 0pt;
+        counter-reset: t1 1;
+    }
+
+    #l18>li>*:first-child:before {
+        counter-increment: t1;
+        content: counter(t1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l18>li:first-child>*:first-child:before {
+        counter-increment: t1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l19 {
+        padding-left: 0pt;
+        counter-reset: u1 1;
+    }
+
+    #l19>li>*:first-child:before {
+        counter-increment: u1;
+        content: counter(u1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l19>li:first-child>*:first-child:before {
+        counter-increment: u1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l20 {
+        padding-left: 0pt;
+        counter-reset: v1 1;
+    }
+
+    #l20>li>*:first-child:before {
+        counter-increment: v1;
+        content: counter(v1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l20>li:first-child>*:first-child:before {
+        counter-increment: v1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l21 {
+        padding-left: 0pt;
+        counter-reset: w1 1;
+    }
+
+    #l21>li>*:first-child:before {
+        counter-increment: w1;
+        content: counter(w1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l21>li:first-child>*:first-child:before {
+        counter-increment: w1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l22 {
+        padding-left: 0pt;
+        counter-reset: x1 1;
+    }
+
+    #l22>li>*:first-child:before {
+        counter-increment: x1;
+        content: counter(x1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l22>li:first-child>*:first-child:before {
+        counter-increment: x1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l23 {
+        padding-left: 0pt;
+        counter-reset: y1 1;
+    }
+
+    #l23>li>*:first-child:before {
+        counter-increment: y1;
+        content: counter(y1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l23>li:first-child>*:first-child:before {
+        counter-increment: y1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l24 {
+        padding-left: 0pt;
+        counter-reset: z1 1;
+    }
+
+    #l24>li>*:first-child:before {
+        counter-increment: z1;
+        content: counter(z1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l24>li:first-child>*:first-child:before {
+        counter-increment: z1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l25 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l25>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l25>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l26 {
+        padding-left: 0pt;
+        counter-reset: d1 1;
+    }
+
+    #l26>li>*:first-child:before {
+        counter-increment: d1;
+        content: counter(d1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l26>li:first-child>*:first-child:before {
+        counter-increment: d1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l27 {
+        padding-left: 0pt;
+        counter-reset: e1 1;
+    }
+
+    #l27>li>*:first-child:before {
+        counter-increment: e1;
+        content: counter(e1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l27>li:first-child>*:first-child:before {
+        counter-increment: e1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l28 {
+        padding-left: 0pt;
+        counter-reset: f1 1;
+    }
+
+    #l28>li>*:first-child:before {
+        counter-increment: f1;
+        content: counter(f1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l28>li:first-child>*:first-child:before {
+        counter-increment: f1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l29 {
+        padding-left: 0pt;
+        counter-reset: g1 1;
+    }
+
+    #l29>li>*:first-child:before {
+        counter-increment: g1;
+        content: counter(g1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l29>li:first-child>*:first-child:before {
+        counter-increment: g1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l30 {
+        padding-left: 0pt;
+        counter-reset: h1 2;
+    }
+
+    #l30>li>*:first-child:before {
+        counter-increment: h1;
+        content: counter(h1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l30>li:first-child>*:first-child:before {
+        counter-increment: h1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l31 {
+        padding-left: 0pt;
+        counter-reset: i1 1;
+    }
+
+    #l31>li>*:first-child:before {
+        counter-increment: i1;
+        content: counter(i1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l31>li:first-child>*:first-child:before {
+        counter-increment: i1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l32 {
+        padding-left: 0pt;
+        counter-reset: j1 1;
+    }
+
+    #l32>li>*:first-child:before {
+        counter-increment: j1;
+        content: counter(j1, decimal)". ";
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l32>li:first-child>*:first-child:before {
+        counter-increment: j1 0;
+    }
+
+    table,
+    tbody {
+        vertical-align: top;
+        overflow: visible;
+    }
+</style>
+{%endblock additional%}
+
+{%block outlineInfo%}
+
+<center><div >
+    <page size="A4">
+        <center><p class="s1" >Independent
+            University, Bangladesh</p></center>
+
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <h2 style="padding-top: 2pt;padding-left: 41pt;text-indent: 0pt;text-align: left;">Instructor’s details:</h2>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        {{cd}} Name
+        <br>{{facultyemail}}
+        
+        <h2 style="padding-top: 2pt;padding-left: 41pt;text-indent: 0pt;line-height: 15pt;text-align: justify;">Course
+            Description</h2>
+        {{course_description}}
+        <h2 style="padding-top: 6pt;padding-left: 41pt;text-indent: 0pt;line-height: 15pt;text-align: justify;">Course
+            Objectives:</h2>
+        Here Goes COurse Objectives
+        <h2 style="padding-bottom: 1pt;padding-left: 41pt;text-indent: 0pt;text-align: justify;">Course Outcome(CO):
+        </h2>
+        Here Goes Program learning outcomes
+        <h2 style="padding-left: 41pt;text-indent: 0pt;line-height: 15pt;text-align: left;">Assessment and Marks
+            Distribution:</h2>
+       Here goes Assement and mark distribution
+        <h2 style="padding-top: 2pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">Grade Conversion Scheme:</h2>
+        <p class="s4" style="padding-bottom: 1pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">The following
+            chart
+            will be followed for grading. This has been customized from the guideline provided by the School of <span
+                class="s11">Engineering and Computer Science</span>.</p>
+        <table style="border-collapse:collapse;margin-left:5.75pt" cellspacing="0">
+            <tr style="height:16pt">
+                <td
+                    style="width:47pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">A</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        A-</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        B+</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">B</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        B-</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        C+</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">C</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        C-</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 13pt;text-align: center;">
+                        D+</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">D</p>
+                </td>
+                <td
+                    style="width:48pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s12" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">F</p>
+                </td>
+            </tr>
+            <tr style="height:17pt">
+                <td
+                    style="width:47pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 5pt;padding-right: 4pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        90-100</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        85-89</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        80-84</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        75-79</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        70-74</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        65-69</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        60-64</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        55-59</p>
+                </td>
+                <td
+                    style="width:44pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        50-54</p>
+                </td>
+                <td
+                    style="width:43pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 6pt;padding-right: 5pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        45-49</p>
+                </td>
+                <td
+                    style="width:48pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s13"
+                        style="padding-top: 1pt;padding-left: 12pt;padding-right: 11pt;text-indent: 0pt;line-height: 14pt;text-align: center;">
+                        0-44</p>
+                </td>
+            </tr>
+        </table>
+        <h2 style="padding-top: 9pt;padding-left: 14pt;text-indent: 0pt;line-height: 15pt;text-align: left;">Required
+            Text:
+        </h2>
+        {{required_textbook}}
+        <h2 style="padding-left: 14pt;text-indent: 0pt;line-height: 10pt;text-align: justify;">Course Policy:</h2>
+        {{cource_policy}}
+        
+        <h2 style="padding-top: 3pt;padding-left: 14pt;text-indent: 0pt;line-height: 15pt;text-align: left;">University
+            Regulation and Code of Conduct:</h2>
+        <p style="padding-left: 14pt;text-indent: 0pt;text-align: left;">Please see the Green Book for further
+            information
+            about academic regulation and policies, including withdrawal and grading, appeals and penalties for
+            plagiarism
+            and academic misconduct.</p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="text-indent: 0pt;text-align: right;">3 of 6</p>
+        <h2 style="padding-top: 1pt;padding-left: 223pt;text-indent: 0pt;text-align: center;">Class &amp; Exam Schedule,
+            Topics and Readings:</h2>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        Here Goes Class and Exam Schedule
+</page>
+</div></center>
+<script>
+    function showDiv()
+    {
+        getElementById("CourseOutline").style.display="block"
+    }
+</script>
+{%endblock outlineInfo%}

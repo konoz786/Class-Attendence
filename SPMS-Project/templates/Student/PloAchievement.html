@@ -1,0 +1,23 @@
+{%extends "student/sNavSide.html"%}
+{%block content%}
+<div class = "row" id ="pie">
+<div class="row">
+    <div class="col-12">
+        <div class="card card-chart">
+          <div class="card-header ">
+              <h2 class="card-title">PLO Achievement Table</h2>
+          </div>
+        </div>
+        <div class="card-body">
+          {{PloAchieveTable|safe}}
+        </div>
+    </div>
+</div>
+
+</div>
+{%endblock%}
+
+
+{% block javascripts %}
+
+{% endblock javascripts %}
